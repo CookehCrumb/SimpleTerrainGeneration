@@ -6,3 +6,144 @@ html, body {
 canvas {
   display: block;
 }
+
+h3 {
+  position: absolute;
+  font-family: Arial;
+  color: white;
+  border-radius: 4px;
+  background-color: rgba(50, 50, 50, 0.5);
+  transition: all 200ms;
+}
+
+h3:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  cursor: pointer;
+}
+
+span {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(50, 50, 50, 0.5);
+  color: white;
+  text-align: center;
+  padding: 7px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.Q {
+  margin-left: 18px;
+  padding-inline: 13px;
+  padding-block: 10px;
+}
+
+.Q .Qinfo {
+  margin-left: -20px;
+  margin-top: 90px;
+  width: 200px;
+}
+
+.Q:hover .Qinfo {
+  visibility: visible;
+}
+
+.W {
+  margin-left: 61px;
+  padding-inline: 12px;
+  padding-block: 10px;
+}
+
+.W .Winfo {
+  margin-left: -65px;
+  margin-top: 90px;
+  width: 200px;
+}
+
+.W:hover .Winfo {
+  visibility: visible;
+}
+
+.E {
+  margin-left: 105px;
+  padding-inline: 14px;
+  padding-block: 10px;
+}
+
+.E .Einfo {
+  margin-left: -106px;
+  margin-top: 90px;
+  width: 200px;
+}
+
+.E:hover .Einfo {
+  visibility: visible;
+}
+
+.A {
+  margin-left: 28px;
+  margin-top: 63px;
+  padding-inline: 14px;
+  padding-block: 10px;
+}
+
+.A .Ainfo {
+  margin-left: -30px;
+  margin-top: 45.5px;
+  width: 200px;
+}
+
+.A:hover .Ainfo {
+  visibility: visible;
+}
+
+.S {
+  margin-left: 72px;
+  margin-top: 63px;
+  padding-inline: 14px;
+  padding-block: 10px;
+}
+
+.S .Sinfo {
+  margin-left: -73px;
+  margin-top: 45.5px;
+  width: 200px;
+}
+
+.S:hover .Sinfo {
+  visibility: visible;
+}
+
+.D {
+  margin-left: 115px;
+  margin-top: 63px;
+  padding-inline: 14px;
+  padding-block: 10px;
+}
+
+.D .Dinfo {
+  margin-left: -117px;
+  margin-top: 45.5px;
+  width: 200px;
+}
+
+.D:hover .Dinfo {
+  visibility: visible;
+}
+
+.F {
+  margin-left: 159px;
+  margin-top: 63px;
+  padding-inline: 14px;
+  padding-block: 10px;
+}
+
+.F .Finfo {
+  margin-left: -159px;
+  margin-top: 45.5px;
+  width: 200px;
+}
+
+.F:hover .Finfo {
+  visibility: visible;
+}

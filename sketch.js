@@ -24,10 +24,10 @@ function setup() {
 }
 
 function draw() {
-  if(keys[0]) yFlying -= 0.1;
-  if(keys[1]) yFlying += 0.1;
-  if(keys[2]) xFlying -= 0.1;
-  if(keys[3]) xFlying += 0.1;
+  if(keys[0]) yFlying -= 0.01;
+  if(keys[1]) yFlying += 0.01;
+  if(keys[2]) xFlying -= 0.01;
+  if(keys[3]) xFlying += 0.01;
   if(keys[4]) terrHeight += 5;
   if(keys[5]) terrHeight -= 5;
   terrHeight = Math.min(Math.max(400, terrHeight), 800);
@@ -67,8 +67,6 @@ function draw() {
     }
     endShape();
   }
-
-  drawKeyboard();
 }
 
 function keyPressed() {
@@ -88,8 +86,4 @@ function keyReleased() {
   if(key == 'D' || key == 'd') keys[3] = false;
   if(key == 'Q' || key == 'q') keys[4] = false;
   if(key == 'E' || key == 'e') keys[5] = false;
-}
-
-function drawText() {
-  
 }
