@@ -24,10 +24,10 @@ function setup() {
 }
 
 function draw() {
-  if(keys[0]) yFlying -= 0.01;
-  if(keys[1]) yFlying += 0.01;
-  if(keys[2]) xFlying -= 0.01;
-  if(keys[3]) xFlying += 0.01;
+  if(keys[0]) yFlying -= 0.1;
+  if(keys[1]) yFlying += 0.1;
+  if(keys[2]) xFlying -= 0.1;
+  if(keys[3]) xFlying += 0.1;
   if(keys[4]) terrHeight += 5;
   if(keys[5]) terrHeight -= 5;
   terrHeight = Math.min(Math.max(400, terrHeight), 800);
@@ -67,23 +67,29 @@ function draw() {
     }
     endShape();
   }
+
+  drawKeyboard();
 }
 
 function keyPressed() {
-    if(key == 'W' || key == 'w') keys[0] = true;
-    if(key == 'S' || key == 's') keys[1] = true;
-    if(key == 'A' || key == 'a') keys[2] = true;
-    if(key == 'D' || key == 'd') keys[3] = true;
-    if(key == 'Q' || key == 'q') keys[4] = true;
-    if(key == 'E' || key == 'e') keys[5] = true;
-    if(key == 'F' || key == 'f') keys[6] = !keys[6];
+  if(key == 'W' || key == 'w') keys[0] = true;
+  if(key == 'S' || key == 's') keys[1] = true;
+  if(key == 'A' || key == 'a') keys[2] = true;
+  if(key == 'D' || key == 'd') keys[3] = true;
+  if(key == 'Q' || key == 'q') keys[4] = true;
+  if(key == 'E' || key == 'e') keys[5] = true;
+  if(key == 'F' || key == 'f') keys[6] = !keys[6];
 }
 
 function keyReleased() {
   if(key == 'W' || key == 'w') keys[0] = false;
-    if(key == 'S' || key == 's') keys[1] = false;
-    if(key == 'A' || key == 'a') keys[2] = false;
-    if(key == 'D' || key == 'd') keys[3] = false;
-    if(key == 'Q' || key == 'q') keys[4] = false;
-    if(key == 'E' || key == 'e') keys[5] = false;
+  if(key == 'S' || key == 's') keys[1] = false;
+  if(key == 'A' || key == 'a') keys[2] = false;
+  if(key == 'D' || key == 'd') keys[3] = false;
+  if(key == 'Q' || key == 'q') keys[4] = false;
+  if(key == 'E' || key == 'e') keys[5] = false;
+}
+
+function drawText() {
+  
 }
