@@ -1,4 +1,4 @@
-# SimpleTerrainGeneration
+# Simple Terrain Generation
 
 Simple terrain generator using p5.js.
 
